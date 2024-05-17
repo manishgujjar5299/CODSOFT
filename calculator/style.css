@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .parent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7aa5d2;
+    font-family: 'Poppins', 'Arial';
+    font-weight: 600;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 29rem;
+    width: 22rem;
+    border-radius: 1rem;
+    background-color: #e8e8e8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .screen-container {
+    height: 5rem;
+    width: 21rem;
+    border-radius: 0.5rem;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #cfcfce,
+    -6px -6px 12px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .screen {
+    width: 20rem;
+    height: 4rem;
+    background-color: #bbbfca;
+    box-shadow: inset 7px 7px 15px #9fa2ac,
+    inset -7px -7px 15px #d7dce8;
+  }
+  
+  .calculator-display {
+    padding-top: 19px;
+    width: 100%;
+    height: 79%;
+    border-radius: 0.5rem;
+    color: #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    box-sizing: border-box;
+    text-align: right;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  .btn-container {
+    width: 20rem;
+    height: 22rem;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    background-color: #e8e8e8;
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 12px #888888; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+    color: #303841;
+    background-color: #e8e8e8;
+    box-shadow: 5px 5px 10px #cfcfce,
+    -5px -5px 10px #ffffff;
+    flex-wrap: wrap;
+    border-radius: 20%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #4d4d4d;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px #1e1e1e;
+  }
+  
+  #equal {
+    width: 8rem;
+    border-radius: 15px;
+  }
+  
+  #Clear, #equal, #DEL {
+    background-color: #df883d;
+    box-shadow: 0px 0px 4px #c86400;
+  }
+  
+  #Clear:hover, #equal:hover, #DEL:hover {
+    background-color: #303841;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px #303841;
+  }
+  
+  #percent, #add, #minus, #multiply, #divide {
+    background-color: #3498db;
+    box-shadow: 0px 0px 4px #2980b9;
+  }
+  
+  #percent:hover, #add:hover, #minus:hover, #multiply:hover, #divide:hover {
+    background-color: #303841;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px #303841;
+  }
